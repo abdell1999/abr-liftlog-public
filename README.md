@@ -1,2 +1,1 @@
-# abr-liftlog-public
-ABR Liflog - public version
+# ABR Liftlog (by abdell1999)
