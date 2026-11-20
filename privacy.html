@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Política de privacidad de ABR Liftlog: qué datos guarda la app y cómo usa Google Drive.">
+  <title>Privacidad · ABR Liftlog</title>
+  <link rel="icon" href="favicon-32.png" sizes="32x32">
+  <style>
+    @font-face { font-family: Barlow; font-weight: 400; font-display: swap; src: url('fonts/barlow-regular.woff2') format('woff2'); }
+    @font-face { font-family: Barlow; font-weight: 600 800; font-display: swap; src: url('fonts/barlow-semibold.woff2') format('woff2'); }
+    @font-face { font-family: 'Barlow Condensed'; font-weight: 700; font-display: swap; src: url('fonts/barlow-condensed-bold.woff2') format('woff2'); }
+    :root {
+      color-scheme: light dark;
+      --surface: #f4f3ed; --card: #ffffff; --ink: #1c2a23; --muted: #566357;
+      --line: #d6d9ce; --link: #31523d; --focus: #426437; --panel: #212b23; --panel-ink: #f5f6ec; --accent: #d2f56c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --surface: #131a16; --card: #1c2620; --ink: #f2f3e9; --muted: #b8c5b5; --line: #3b493f; --link: #c6dfa7; --focus: #d2f56c; }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; overflow-x: clip; }
+    body { background: var(--surface); color: var(--ink); font: 400 1.0625rem/1.6 Barlow, system-ui, sans-serif; }
+    header { background: var(--panel); color: var(--panel-ink); padding: 16px; }
+    header a { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font: 700 1.25rem/1 'Barlow Condensed', Barlow, sans-serif; letter-spacing: .02em; text-transform: uppercase; }
+    header img { width: 32px; height: 32px; }
+    main { max-width: 44rem; margin-inline: auto; padding: 24px 16px 48px; }
+    h1, h2 { font-family: 'Barlow Condensed', Barlow, sans-serif; font-weight: 700; line-height: 1.1; }
+    h1 { font-size: 2.5rem; margin: 0 0 4px; }
+    h2 { font-size: 1.5rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+    .updated { color: var(--muted); margin: 0 0 24px; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    header a:focus-visible { outline-color: var(--accent); }
+    code { overflow-wrap: anywhere; font-size: .9em; background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+    ul { padding-left: 1.25rem; }
+    li + li { margin-top: 8px; }
+    footer { max-width: 44rem; margin-inline: auto; padding: 0 16px 40px; }
+    .back { display: inline-block; min-height: 44px; padding: 10px 18px; border-radius: 999px; background: var(--accent); color: #202a18; font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header><a href="./"><img src="brand.svg" alt="" width="32" height="32">ABR Liftlog</a></header>
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 20 de noviembre de 2026</p>
+    <p>ABR Liftlog es una aplicación web para registrar entrenamientos de gimnasio. Funciona en tu navegador y no tiene cuentas de usuario ni servidor propio.</p>
+    <p>Responsable del tratamiento: <a href="https://abdell.dev">abdell.dev</a>. Contacto: <a href="mailto:contacto@abdell.dev">contacto@abdell.dev</a>.</p>
+
+    <h2>Qué datos guarda la app</h2>
+    <p>Las sesiones, series, cardio, rutinas, notas de máquinas y fotos que registras se guardan en el almacenamiento local de tu navegador (IndexedDB), en tu dispositivo. Esos datos no se envían a ningún servidor de ABR Liftlog. La app no usa analítica, cookies de seguimiento ni publicidad.</p>
+    <p>La web se sirve desde GitHub Pages. Como cualquier servidor web, GitHub recibe los datos técnicos de cada visita, como la dirección IP y el navegador, según su propia política de privacidad. Si conectas Google Drive, el script de inicio de sesión de Google se descarga desde los servidores de Google, que reciben los mismos datos técnicos.</p>
+
+    <h2>Google Drive (opcional)</h2>
+    <p>Solo si pulsas «Autorizar Google Drive», la app te pide permiso a través de Google para usar tu Drive con estos dos permisos:</p>
+    <ul>
+      <li><code>https://www.googleapis.com/auth/drive.file</code>: crear y leer la carpeta «ABR Liftlog» de tu Mi unidad, con las copias de seguridad, las rutinas y los archivos de sincronización entre dispositivos que crea la propia app. Con este permiso la app no puede ver el resto de archivos de tu Drive.</li>
+      <li><code>https://www.googleapis.com/auth/drive.appdata</code>: leer las copias antiguas que versiones anteriores de la app guardaron en su espacio privado de Drive, para que puedas restaurarlas.</li>
+    </ul>
+    <p>Esos archivos contienen los mismos datos de entrenamiento que guardas en la app. El permiso que concede Google se guarda solo en la pestaña abierta de tu navegador y la app lo envía únicamente a los servicios de Google Drive. La app no accede a tu nombre, correo, contactos ni otros datos de tu cuenta de Google.</p>
+
+    <h2>Uso de los datos de Google</h2>
+    <p>Los datos obtenidos de Google Drive se usan solo para ofrecerte las copias de seguridad, la restauración y la sincronización que ves en la app. No se venden, no se comparten con terceros, no se usan para publicidad y no se usan para entrenar modelos de inteligencia artificial.</p>
+    <p>El uso y la transferencia de la información recibida de las API de Google por ABR Liftlog cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado (Limited Use).</p>
+
+    <h2>Control y borrado</h2>
+    <ul>
+      <li>En Copias puedes pulsar «Desconectar Drive» para que la app olvide el permiso en esta pestaña y deje de reconectarse sola. Otras pestañas abiertas conservan el permiso hasta que caduca, como máximo una hora.</li>
+      <li>Puedes retirar el acceso en cualquier momento desde la <a href="https://myaccount.google.com/permissions">gestión de permisos de tu cuenta de Google</a>.</li>
+      <li>En Copias, «Empezar de cero aquí» borra tus entrenamientos, rutinas, fotos y la conexión con Drive guardados en este navegador. Solo se conservan preferencias de la interfaz.</li>
+      <li>Los archivos de Drive son tuyos: puedes borrar la carpeta «ABR Liftlog» desde Google Drive cuando quieras.</li>
+    </ul>
+
+    <h2>Cambios en esta política</h2>
+    <p>Si esta política cambia, se publicará aquí con una nueva fecha de actualización. Si tienes dudas, escribe a <a href="mailto:contacto@abdell.dev">contacto@abdell.dev</a>.</p>
+  </main>
+  <footer><a class="back" href="./">Volver a Liftlog</a></footer>
+</body>
+</html>
